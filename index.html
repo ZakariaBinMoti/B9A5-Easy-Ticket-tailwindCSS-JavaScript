@@ -72,7 +72,7 @@
               <li><a>Search</a></li>
             </ul>
           </div>
-          <a class="text-4xl font-extrabold">Easy-Ticket</a>
+          <a class="text-4xl font-extrabold">Easy<span class="text-[#1DD100]">-Ticket</span></a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul
@@ -219,12 +219,12 @@
                   <p>Route</p>
                   <p>Dhaka-Sylhet</p>
                 </div>
-                <hr />
+                <hr class="border-dashed" />
                 <div class="flex justify-between">
                   <p>Departure Time</p>
                   <p>9.00 PM</p>
                 </div>
-                <hr />
+                <hr class="border-dashed" />
                 <div class="flex justify-between">
                   <button class="btn">Boarding Point -Laxipur</button
                   ><button class="btn">Dropping Point - Bogura</button
@@ -243,11 +243,11 @@
           </div>
 
           <!-- booking tickets -->
-          <div class="bg-white rounded-3xl p-8 mt-6 flex gap-16 Inter">
+          <div class="bg-white rounded-3xl p-8 mt-6 flex gap-8 Inter">
             <!-- left side -->
             <div class="flex-grow">
               <h3 class="text-2xl font-semibold mb-6">Select Your Seat</h3>
-              <hr />
+              <hr class="border border-dashed" />
               <div class="flex justify-between my-5">
                 <div class="flex">
                   <img src="images/seat-gray.png" alt="" />
@@ -258,7 +258,7 @@
                   <p>Selected</p>
                 </div>
               </div>
-              <hr />
+              <hr class="border border-dashed" />
               <div class="flex justify-end">
                 <button class="btn px-10 my-5">
                   <img src="images/tabler-icon-steering-wheel.svg" alt="" />
@@ -336,11 +336,11 @@
                 </div>
               </div>
             </div>
-
+            <div class="border border-dashed"></div>
             <!-- right side -->
-            <div class="flex-grow">
+            <div class="flex-grow max-w-[450px]">
               <h3 class="text-2xl font-semibold mb-6">Select your Seat</h3>
-              <hr />
+              <hr class="border border-dashed" />
               <div class="bg-[#F7F8F8] rounded-xl p-8 my-8">
                 <div class="flex justify-between font-medium">
                   <p>
@@ -353,7 +353,7 @@
                   <p>class</p>
                   <p>Price</p>
                 </div>
-                <hr class="my-3" />
+                <hr class="my-3 border border-dashed" />
                 <!-- 
                         added sits 
                      -->
@@ -370,7 +370,7 @@
                   </div>
                 </div>
 
-                <hr class="my-3" />
+                <hr class="my-3 border border-dashed" />
 
                 <div class="flex justify-between font-medium">
                   <p>Total</p>
@@ -405,7 +405,7 @@
                   class="input input-bordered w-full"
                 />
                 <p>Phone Number</p>
-                <input
+                <input id="phone-number"
                   type="text"
                   placeholder="Enter Your Phone"
                   class="input input-bordered w-full"
@@ -422,7 +422,8 @@
                   open modal
                 </button> -->
                 <input
-                id="next-btn"
+                
+                id="next-button"
                   type="button"
                   value="Next"
                   class="btn w-full bg-[#1DD100]"
@@ -467,7 +468,7 @@
         <div class="flex justify-between">
           <div class="space-y-5">
             <h3 class="text-4xl font-extrabold">Easy Ticket</h3>
-            <p>
+            <p class="opacity-60">
               Easy ticket is a digital platform to make your <br />
               daily commuting better.
             </p>
@@ -478,10 +479,10 @@
           </div>
         </div>
 
-        <hr class="my-8" />
+        <hr class="my-8 border border-dashed opacity-40" />
 
         <div class="flex justify-between">
-          <p>@all rights reserved. Easy service limited 2024.</p>
+          <p class="opacity-60">@all rights reserved. Easy service limited 2024.</p>
           <div class="flex gap-8">
             <a href="">Terms and Condition</a>
             <a href="">Return and Refund Policy</a>

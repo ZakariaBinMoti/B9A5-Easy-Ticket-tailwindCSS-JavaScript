@@ -10,11 +10,10 @@ for (const seat of seats) {
         if (!seatsArray.includes(seat.innerText)) {
             if (seatsArray.length < 4) {
                 seatsArray.push(seat.innerText);
-                seat.style.backgroundColor = 'green';
+                seat.style.backgroundColor = '#1DD100';
                 setAvailableSeats();
                 ticketlist();
-                sum();
-                
+                sum();              
             }
             else {
                 alert('You cant add more than 4 seat at a time');
@@ -29,11 +28,8 @@ for (const seat of seats) {
             ticketlist();
             sum();
         }
-        console.log(seatsArray);
-        console.log(seat.innerText);
     })
 }
-console.log(seats);
 
 setAvailableSeats();
 function setAvailableSeats() {
@@ -86,6 +82,20 @@ function sum() {
         }
         else {
             couponBtn.setAttribute('disabled', true);
+        }
+    })
+}
+
+nextBtn();
+function nextBtn(){
+    document.getElementById('phone-number').addEventListener('keyup', function(event){
+        const text = event.target.value;
+        const nextButton = document.getElementById('next-button');
+        if(seatsArray.length>0){
+            nextButton.removeAttribute('disabled');
+        }
+        else{
+            nextButton.setAttribute('disabled', true);
         }
     })
 }
