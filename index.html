@@ -113,7 +113,7 @@
           <button
             class="btn bg-[#1DD100] mb-32 border-[#1DD100] text-xl font-bold"
           >
-            Buy Tickets
+            <a href="#bogura-express">Buy Tickets</a>
           </button>
           <div class="absolute bottom-[-69px] left-[101px]">
             <img src="images/Group 14.png" alt="" />
@@ -181,7 +181,7 @@
             Bogura Express Section
           -->
 
-      <section class="border-t-2 border-[#1DD100] rounded-t-[88px] bg-[#F7F8F8] pb-32">
+      <section id="bogura-express" class="border-t-2 border-[#1DD100] rounded-t-[88px] bg-[#F7F8F8] pb-32">
         <div class="max-w-[1170px] mx-auto">
           <!-- title div -->
           <div class="text-center">
@@ -205,7 +205,7 @@
                   </div>
                 </div>
                 <button class="btn text-[#1DD100] Inter">
-                  <img src="images/seat-green.png" alt="" />40 Seats Left
+                  <img src="images/seat-green.png" alt="" /><span id="AvailableSeats"></span> Seats Left
                 </button>
               </div>
               <div class="bg-[#F7F8F8] rounded-3xl p-8 space-y-6">
@@ -277,60 +277,60 @@
                   <!-- left line sits -->
                   <div class="flex flex-grow gap-5 mr-4">
                     <div class="flex flex-col flex-grow gap-5">
-                        <button class="btn">A1</button>
-                        <button class="btn">B1</button>
-                        <button class="btn">C1</button>
-                        <button class="btn">D1</button>
-                        <button class="btn">E1</button>
-                        <button class="btn">F1</button>
-                        <button class="btn">G1</button>
-                        <button class="btn">H1</button>
-                        <button class="btn">I1</button>
-                        <button class="btn">J1</button>
+                        <button id="seats" class="btn">A1</button>
+                        <button id="seats" class="btn">B1</button>
+                        <button id="seats" class="btn">C1</button>
+                        <button id="seats" class="btn">D1</button>
+                        <button id="seats" class="btn">E1</button>
+                        <button id="seats" class="btn">F1</button>
+                        <button id="seats" class="btn">G1</button>
+                        <button id="seats" class="btn">H1</button>
+                        <button id="seats" class="btn">I1</button>
+                        <button id="seats" class="btn">J1</button>
                       </div>
         
         
                       <div class="flex flex-col flex-grow gap-5">
-                        <button class="btn">A1</button>
-                        <button class="btn">B1</button>
-                        <button class="btn">C1</button>
-                        <button class="btn">D1</button>
-                        <button class="btn">E1</button>
-                        <button class="btn">F1</button>
-                        <button class="btn">G1</button>
-                        <button class="btn">H1</button>
-                        <button class="btn">I1</button>
-                        <button class="btn">J1</button>
+                        <button id="seats" class="btn">A2</button>
+                        <button id="seats" class="btn">B2</button>
+                        <button id="seats" class="btn">C2</button>
+                        <button id="seats" class="btn">D2</button>
+                        <button id="seats" class="btn">E2</button>
+                        <button id="seats" class="btn">F2</button>
+                        <button id="seats" class="btn">G2</button>
+                        <button id="seats" class="btn">H2</button>
+                        <button id="seats" class="btn">I2</button>
+                        <button id="seats" class="btn">J2</button>
                       </div>
         
                   </div>
                   <!-- right sits -->
                   <div class="flex flex-grow gap-5">
                     <div class="flex flex-col flex-grow gap-5">
-                        <button class="btn">A1</button>
-                        <button class="btn">B1</button>
-                        <button class="btn">C1</button>
-                        <button class="btn">D1</button>
-                        <button class="btn">E1</button>
-                        <button class="btn">F1</button>
-                        <button class="btn">G1</button>
-                        <button class="btn">H1</button>
-                        <button class="btn">I1</button>
-                        <button class="btn">J1</button>
+                        <button id="seats" class="btn">A3</button>
+                        <button id="seats" class="btn">B3</button>
+                        <button id="seats" class="btn">C3</button>
+                        <button id="seats" class="btn">D3</button>
+                        <button id="seats" class="btn">E3</button>
+                        <button id="seats" class="btn">F3</button>
+                        <button id="seats" class="btn">G3</button>
+                        <button id="seats" class="btn">H3</button>
+                        <button id="seats" class="btn">I3</button>
+                        <button id="seats" class="btn">J3</button>
                       </div>
         
         
                       <div class="flex flex-col flex-grow gap-5">
-                        <button class="btn">A1</button>
-                        <button class="btn">B1</button>
-                        <button class="btn">C1</button>
-                        <button class="btn">D1</button>
-                        <button class="btn">E1</button>
-                        <button class="btn">F1</button>
-                        <button class="btn">G1</button>
-                        <button class="btn">H1</button>
-                        <button class="btn">I1</button>
-                        <button class="btn">J1</button>
+                        <button id="seats" class="btn">A4</button>
+                        <button id="seats" class="btn">B4</button>
+                        <button id="seats" class="btn">C4</button>
+                        <button id="seats" class="btn">D4</button>
+                        <button id="seats" class="btn">E4</button>
+                        <button id="seats" class="btn">F4</button>
+                        <button id="seats" class="btn">G4</button>
+                        <button id="seats" class="btn">H4</button>
+                        <button id="seats" class="btn">I4</button>
+                        <button id="seats" class="btn">J4</button>
                       </div>
                   </div>
                   
@@ -351,9 +351,9 @@
             <div class="flex-grow">   
                 <h3 class="text-2xl font-semibold mb-6">Select your Seat</h3>
                 <hr>
-                <div class="bg-[#F7F8F8] rounded-xl p-8">
+                <div class="bg-[#F7F8F8] rounded-xl p-8 my-8">
                     <div class="flex justify-between font-medium">
-                        <p>Seat<span class="bg-[#1DD100]  rounded-3xl px-2 text-white">2</span></p>
+                        <p>Seat<span id="selectedSeats" class="bg-[#1DD100]  rounded-3xl px-2 text-white">2</span></p>
                         <p>class</p>
                         <p>Price</p>
                     </div>
@@ -361,7 +361,7 @@
                     <!-- 
                         added sits 
                      -->
-                    <div class="font-light text-[#030712B3]">
+                    <div id="ticketlist" class="font-light text-[#030712B3]">
                         <div class="flex justify-between">
                             <p>C2</p>
                             <p>Economy</p>
@@ -380,17 +380,35 @@
                         <p>Total</p>
                         <p>BDT <span>1100</span></p>
                     </div>
+
+                    <label class="input input-bordered flex items-center gap-2 my-3 ">
+                      <input type="text" class="grow" placeholder="Have any coupon?" />
+                      <button class="btn bg-[#1DD100]">Apply</button>
+                    </label>
+
+                    <div class="flex justify-between font-medium">
+                      <p>Grand Total</p>
+                      <p>BDT <span>1100</span></p>
+                  </div>
                    
-                        <input type="text"><button>Apply</button>
-                        <p>Passenger Name*</p>
-                        <input type="text" name="" id="">
-                        <p>Phone Number*</p>
-                        <input type="number" name="" id="">
-                        <p>Email</p>
-                        <input type="email" name="" id=""> <br>
-                        <input type="button" value="Next" class="btn">
 
                 </div>
+               <div class="space-y-3">
+                <p>Passenger Name</p>
+                <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full" />
+                <p>Phone Number</p>
+                <input type="text" placeholder="Enter Your Phone" class="input input-bordered w-full" />
+                <p>Email ID</p>
+                <input type="text" placeholder="Enter Your Email ID" class="input input-bordered w-full"/>
+                <input type="button" value="Next" class="btn w-full bg-[#1DD100]">
+
+               </div>
+
+               <div class="flex justify-around mt-4 underline">
+                <a href="">Terms and conditions</a>
+                <a href="">Cancellation Policy</a>
+               </div>
+
             </div>
 
           </div>
@@ -398,6 +416,10 @@
       </section>
     </main>
 
+
+    <!-- 
+      footer
+     -->
     <footer class="bg-[#030712] text-white"> 
       <div class="max-w-[1170px] mx-auto Raleway py-28">
 
@@ -434,5 +456,13 @@
 
       </div>
     </footer>
+
+
+    <!-- 
+      Script
+     -->
+
+     <script src="scripts/ticket-booking.js"></script>
+
   </body>
 </html>
