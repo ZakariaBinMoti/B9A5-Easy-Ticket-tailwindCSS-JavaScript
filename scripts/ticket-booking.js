@@ -17,14 +17,14 @@ for (const seat of seats) {
                 
             }
             else {
-                alert('You cant add more than 4 seat');
+                alert('You cant add more than 4 seat at a time');
             }
-            // seat.style.backgroundColor = 'skyblue';
 
         }
         else {
+            const arraytext = seat.innerText;
             seat.style.backgroundColor = '';
-            seatsArray.pop();
+            seatsArray = seatsArray.filter(i => i != arraytext);
             setAvailableSeats();
             ticketlist();
             sum();
